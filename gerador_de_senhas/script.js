@@ -1,4 +1,5 @@
 function getPassword() {
+
     var chars = "";
     var numeros = "0123456789"
     var alfabeto = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ"
@@ -25,13 +26,12 @@ function getPassword() {
     }
 
 
+
     for (var i = 0; i < passwordLength; i++) {
       var randomNumber = Math.floor(Math.random() * chars.length);
       password += chars.substring(randomNumber, randomNumber + 1);
     }
     document.getElementById('password').value = password
-    
+
   }
- 
-  
 
