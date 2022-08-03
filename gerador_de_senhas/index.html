@@ -9,11 +9,46 @@
 <body>
     <script src="script.js"></script>
 
-    <div class="input-box">
+    <section class="input-box">
 
         <h2>Gerador de senhas randomicas</h2>
-        <input type="text" placeholder="Gerar senha" id="password" readonly="">
-        <div id="btn" onclick="getPassword()">Gerar senha</div>
+
+        <div>
+            <li>
+                Tamanho da Senha
+                <input id="length" type="number">
+                
+            </li>
+        </div>
+
+        <div>
+
+            <li>
+                <input id="n" type="checkbox" name="tipo-de-senha" value="so-numeros">               
+                <label for = "so-numeros"> Só Números </ label>
+            </li>
+            <li>
+                <input id = "a" type="checkbox" name="tipo-de-senha" value="alfanumericos">
+                <label for = "alfanumerica"> Alfanumérica </ label>
+            </li>
+            <li>
+                <input id = "geral" type="checkbox" name="tipo-de-senha" value="caracteres-especiais">
+                <label for = "caracteres-especiais"> Caracteres Especiais </ label>
+            </li>
+        </div>
+
+        <div>
+
+            <button type="button" id="btn" onclick="getPassword()">Gerar Senha</button>
+        </div>
+
+        <div>
+            <input type="text" placeholder="Gerar Senha" id="password" readonly"">
+        </div>
+
+        <section 
+
+        
       </div>
 </body>
 </html>
