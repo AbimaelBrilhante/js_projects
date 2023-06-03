@@ -30,6 +30,7 @@ function getPassword() {
       password += chars.substring(randomNumber, randomNumber + 1);
     }
     document.getElementById('password').value = password
+    //TESTE
     
   }
  
